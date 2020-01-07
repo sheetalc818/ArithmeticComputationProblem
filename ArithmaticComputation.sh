@@ -6,4 +6,5 @@ echo "======Arithmetic Computation & Sorting====="
 echo "Enter Three Values :"
 read a b c
 
-
+#Compute a + b * c
+result=$(( $a+$b*$c ))
