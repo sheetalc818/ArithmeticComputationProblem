@@ -27,3 +27,9 @@ Computation[$((counter++))]=$result
 
 echo  "All results of Computation" ${Computation[@]}
 
+#Reading data from Dictionary
+for key in ${!Computation[@]}
+do
+	ComputationArray[((counter++))]=${Computation[$key]}
+done
+echo "Computation Array is::" ${ComputationArray[@]}
