@@ -12,3 +12,6 @@ result=$(( $a+$b*$c ))
 #Compute a * b + c
 result=$(( $a*$b+$c ))
 
+#Compute c + a / b
+result=$(( $c+$a/$b ))
+
