@@ -8,3 +8,7 @@ read a b c
 
 #Compute a + b * c
 result=$(( $a+$b*$c ))
+
+#Compute a * b + c
+result=$(( $a*$b+$c ))
+
