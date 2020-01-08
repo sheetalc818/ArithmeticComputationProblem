@@ -33,3 +33,13 @@ do
 	ComputationArray[((counter++))]=${Computation[$key]}
 done
 echo "Computation Array is::" ${ComputationArray[@]}
+
+#Function to sort Dictionary in desc
+function descendingSort()
+{
+	echo "Descending Order" $(printf "%s\n" ${ComputationArray[@]} | sort -nr)
+}
+
+#Calling Descending Sort
+descendingSort $ComputationArray
+
