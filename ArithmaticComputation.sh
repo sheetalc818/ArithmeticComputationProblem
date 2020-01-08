@@ -40,6 +40,13 @@ function descendingSort()
 	echo "Descending Order" $(printf "%s\n" ${ComputationArray[@]} | sort -nr)
 }
 
-#Calling Descending Sort
+function ascendingSort()
+{
+	echo "Ascendig Order" $(printf "%s\n" ${ComputationArray[@]} | sort -n)
+}
+
+#Calling Descending Sort function
 descendingSort $ComputationArray
 
+#Calling ascending Sort function
+ascendingSort $ComputationArray
